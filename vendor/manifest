@@ -1,0 +1,73 @@
+{
+	"version": 0,
+	"dependencies": [
+		{
+			"importpath": "github.com/Sirupsen/logrus",
+			"repository": "https://github.com/Sirupsen/logrus",
+			"revision": "4b6ea7319e214d98c938f12692336f7ca9348d6b",
+			"branch": "master",
+			"notests": true
+		},
+		{
+			"importpath": "github.com/docker/engine-api",
+			"repository": "https://github.com/docker/engine-api",
+			"revision": "6156954c5d57a1728c65593b13f50c405d9de9ed",
+			"branch": "master",
+			"notests": true
+		},
+		{
+			"importpath": "github.com/docker/go-connections/nat",
+			"repository": "https://github.com/docker/go-connections",
+			"revision": "f549a9393d05688dff0992ef3efd8bbe6c628aeb",
+			"branch": "master",
+			"path": "/nat",
+			"notests": true
+		},
+		{
+			"importpath": "github.com/docker/go-connections/sockets",
+			"repository": "https://github.com/docker/go-connections",
+			"revision": "f549a9393d05688dff0992ef3efd8bbe6c628aeb",
+			"branch": "master",
+			"path": "/sockets",
+			"notests": true
+		},
+		{
+			"importpath": "github.com/docker/go-connections/tlsconfig",
+			"repository": "https://github.com/docker/go-connections",
+			"revision": "f549a9393d05688dff0992ef3efd8bbe6c628aeb",
+			"branch": "master",
+			"path": "/tlsconfig",
+			"notests": true
+		},
+		{
+			"importpath": "github.com/docker/go-units",
+			"repository": "https://github.com/docker/go-units",
+			"revision": "5d2041e26a699eaca682e2ea41c8f891e1060444",
+			"branch": "master",
+			"notests": true
+		},
+		{
+			"importpath": "github.com/miekg/dns",
+			"repository": "https://github.com/miekg/dns",
+			"revision": "b5f8285e2ab8f825c92ba68ddbbfe55c534b1064",
+			"branch": "master",
+			"notests": true
+		},
+		{
+			"importpath": "golang.org/x/net/context",
+			"repository": "https://go.googlesource.com/net",
+			"revision": "e45385e9b226f570b1f086bf287b25d3d4117776",
+			"branch": "master",
+			"path": "/context",
+			"notests": true
+		},
+		{
+			"importpath": "golang.org/x/net/proxy",
+			"repository": "https://go.googlesource.com/net",
+			"revision": "e45385e9b226f570b1f086bf287b25d3d4117776",
+			"branch": "master",
+			"path": "/proxy",
+			"notests": true
+		}
+	]
+}

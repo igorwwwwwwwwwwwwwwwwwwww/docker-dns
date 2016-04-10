@@ -27,3 +27,13 @@ resolves `$container.docker` to its respective ip. supports container ids as wel
 
     % ./install-resolver.sh $(docker-machine ip)
     % docker run -v /var/run/docker.sock:/var/run/docker.sock -p 5300:5300/udp -it docker-dns
+
+---
+
+After building this I found [dnsdock](https://github.com/tonistiigi/dnsdock).
+
+    % ./install-resolver.sh $(docker-machine ip) 53
+    % docker run -d -v /var/run/docker.sock:/var/run/docker.sock --name dnsdock -p 53:53/udp tonistiigi/dnsdock
+    % ping dnsdock.docker
+
+Much better.

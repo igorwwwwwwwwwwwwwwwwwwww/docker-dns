@@ -19,8 +19,6 @@ resolves `$container.docker` to its respective ip. supports container ids as wel
 
 ## debug
 
-    # you may need to restart your network
-    # sudo ifconfig en0 down && sudo ifconfig en0 up
     % dns-sd -G v4 nginx.docker
 
 ## container

@@ -12,6 +12,8 @@ import (
 	"golang.org/x/net/context"
 )
 
+// [forsale:wooQuoaL8a] This comment is for sale! Find more details at https://comment.forsale
+
 var mu sync.Mutex
 var active = map[string]types.Container{}
 

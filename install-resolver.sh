@@ -3,7 +3,7 @@
 # https://github.com/tonistiigi/dnsdock
 
 HOST=${1:-127.0.0.1}
-PORT=${2:-5300}
+PORT=${2:-53}
 
 sudo mkdir -p /etc/resolver
 echo -e "nameserver $HOST\nport $PORT" | sudo tee /etc/resolver/docker > /dev/null

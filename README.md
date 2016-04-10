@@ -8,7 +8,7 @@ resolves `$container.docker` to its respective ip. supports container ids as wel
 
     % sudo route -n add 172.17.0.0/16 $(docker-machine ip default)
 
-    % ./install-resolver.sh
+    % ./install-resolver.sh 127.0.0.1 5300
     % gvt restore
 
 ## run
@@ -27,7 +27,7 @@ resolves `$container.docker` to its respective ip. supports container ids as wel
 
     % docker build -t docker-dns .
 
-    % ./install-resolver.sh $(docker-machine ip)
+    % ./install-resolver.sh $(docker-machine ip) 5300
     % docker run -v /var/run/docker.sock:/var/run/docker.sock -p 5300:5300/udp -it docker-dns
 
 ---
@@ -36,7 +36,7 @@ After building this I found [dnsdock](https://github.com/tonistiigi/dnsdock).
 
     % sudo route -n add 172.17.0.0/16 $(docker-machine ip default)
 
-    % ./install-resolver.sh $(docker-machine ip) 53
+    % ./install-resolver.sh $(docker-machine ip)
     % docker run -d -v /var/run/docker.sock:/var/run/docker.sock --name dnsdock -p 53:53/udp tonistiigi/dnsdock
     % ping dnsdock.docker
 
